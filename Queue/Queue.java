@@ -11,7 +11,7 @@ public class Queue {
     }
 
     public void enqueue(String data){
-        QueueNode newNode = new QueueNode();
+        QueueNode newNode = new QueueNode(data);
         if (head == null){
             head = tail = newNode;
         }
@@ -22,10 +22,10 @@ public class Queue {
         queueSize++;
 
     }
-    public void dequeue(){
+    public String dequeue(){
         if(head == null){
             System.out.println("Kuyruk boş.");
-            return;
+            return null;
         }
         else{
             String data = head.data;
@@ -36,7 +36,7 @@ public class Queue {
         if(head == null){
             tail = null;
         }
-        return;
+        return null;
     }
     public String peek(){
         if (head == null){

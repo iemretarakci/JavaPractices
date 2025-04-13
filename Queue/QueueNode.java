@@ -4,7 +4,7 @@ public class QueueNode {
     public String data;
     public QueueNode nextNode;
 
-    public void QueueNode(String data){
+    public QueueNode(String data){
         this.data = data;
         this.nextNode = null;
     }

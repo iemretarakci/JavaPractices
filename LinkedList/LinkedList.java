@@ -4,7 +4,7 @@ public class LinkedList {
     SingleNode head;
 
     public void add(String data){
-        SingleNode newNode = new SingleNode();
+        SingleNode newNode = new SingleNode(data);
         if(head == null){
             head = newNode;
         }
@@ -14,6 +14,14 @@ public class LinkedList {
                 temp = temp.nextNode;
             }
             temp.nextNode = newNode;
+        }
+    }
+    public void remove(){
+        if (head == null){
+            System.out.println("Liste boş.");
+        }
+        else {
+
         }
     }
     public void print(){
